@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Reset Vite/CRA mặc định gây lệch layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #eaf3ff;
+  min-height: 100vh;
+  text-align: left; /* Vite default set center — override lại */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
